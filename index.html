@@ -1,139 +1,184 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Luna Beltran | Portafolio</title>
 
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <title>Jose Luna Beltran</title>
+
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
 
     <header>
 
         <nav class="navbar">
 
-            <h1 class="logo">
+            <div class="logo">
                 Jose L. Beltran
-            </h1>
+            </div>
 
-            <ul class="nav-links">
+            <ul class="nav-links"></ul>
 
-    <li><a href="#">Inicio</a></li>
+                <a href="#home" class="home-btn">
 
-    <li><a href="#sobre-mi">
-        About me
-    </a></li>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                viewBox="0 0 16 16">
 
-    <li><a href="#proyectos">
-        Projects
-    </a></li>
-
-    <li><a href="#contact">
-        Contact
-    </a></li>
-
-</ul>
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 2 8h1v6a1 1 0 0 0 1 1h3V10h2v5h3a1 1 0 0 0 1-1V8h1a.5.5 0 0 0 .354-.854z"/></svg>
+                
+                </a>
 
         </nav>
 
     </header>
 
-    <section class="hero">
+    <!-- HERO -->
+
+    <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <h2>
-                Jose Luna Beltran 
-            </h2>
+            <span class="hero-tag">
+                FULL STACK DEVELOPER
+            </span>
+
+            <h1>
+                Jose Luna Beltran
+            </h1>
 
             <p>
-                Creator of applications, funcional websites,
-                and technology enthusiast.
+                Building websites, applications and digital experiences.
             </p>
 
-            <a href="#" class="btn">
-                View Proyects
+            <a href="#proyectos" class="hero-btn">
+                View Projects
             </a>
 
         </div>
 
     </section>
 
-    <!-- SOBRE MI -->
+    <!-- ABOUT -->
 
-<section class="about" id="sobre-mi">
+    <section class="about" id="sobre-mi">
 
-    <div class="about-content">
+        <div class="about-content">
 
-        <h2>Hi, I´m Jose</h2>
+            <h2>About Me</h2>
+
+            <p>
+                Frontend and Backend Web Developer passionate about modern design,
+                programming, and creating engaging digital experiences.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="projects" id="proyectos">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Personal portfolio developed with HTML and CSS.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Future Project</h3>
+
+                <p>
+                    Coming soon...
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Future Project</h3>
+
+                <p>
+                    Coming soon...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
 
         <p>
-           Frontend and Backend Web Developer, passionate about modern design, programming, 
-           and creating engaging digital experiences.
+            Feel free to reach out for collaborations, projects, or professional opportunities.
         </p>
 
-    </div>
+        <div class="contact-buttons">
 
-</section>
+            <a href="mailto:tu_correo@correo.com" class="contact-btn">
+                E-mail
+            </a>
 
-<!-- PROYECTOS -->
+            <a href="https://linkedin.com/in/tu_usuario" target="_blank" class="contact-btn">
+                LinkedIn
+            </a>
 
-<section class="projects" id="proyectos">
+            <a href="https://twitter.com/tu_usuario" target="_blank" class="contact-btn">
+                Twitter
+            </a>
 
-    <h2>Projects</h2>
+            <a href="https://github.com/tu_usuario" target="_blank" class="contact-btn">
+                GitHub
+            </a>
 
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>My Web Portafolio</h3>
-
-            <p>
-                Informacion sobre mi.
-            </p>
         </div>
 
-        <div class="project-card">
-            <h3>Projet </h3>
+    </section>
 
-            <p>
-                Coming soon 
-            </p>
-        </div>
+    <!-- FOOTER -->
 
-    </div>
+    <footer>
 
-</section>
+        <p>
+            © 2026 Jose Luna Beltran
+        </p>
 
-<!-- CONTACTO -->
+        <p>
+            Built with HTML & CSS
+        </p>
 
-<section class="contact" id="contact">
+    </footer>
 
-    <h2>Contact me</h2>
+    <script src="script.js"></script>
 
-    <p>
-        Feel free to reach out for collaborations, projects, or professional opportunities.
-    </p>
-
-    <div class="contact-buttons">
-
-        <a href="Joseluna_199@hotmail.com" class="contact-btn">
-            E-mail
-        </a>
-
-        <a href="https://www.linkedin.com/in/jose-luna-beltran-654005410/" target="_blank" class="contact-btn">
-            LinkedIn
-        </a>
-
-        <a href="https://x.com/pepe98_199" target="_blank" class="contact-btn">
-            Twitter
-        </a>
-
-    </div>
-
-</section>
-
- </body>
+</body>
 
 </html>
