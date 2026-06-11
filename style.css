@@ -231,8 +231,8 @@ header{
 
 .skill{
 
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
 
     border-radius: 50%;
 
@@ -244,16 +244,15 @@ header{
 
     /* Glassmorphism */
 
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255,255,255,0.55);
 
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(37,99,235,0.2);
 
     box-shadow:
-        0 8px 32px rgba(31, 38, 135, 0.12),
-        inset 0 1px 1px rgba(255,255,255,0.3);
+        0 0 15px rgba(0,180,255,0.15),
+        0 8px 25px rgba(0,0,0,0.05);
 
     transition: all 0.3s ease;
 
@@ -264,11 +263,11 @@ header{
 
 .skill:hover{
 
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-10px) scale(1.08);
 
     box-shadow:
-        0 15px 35px rgba(37,99,235,0.15),
-        inset 0 1px 1px rgba(255,255,255,0.4);
+        0 0 25px rgba(0,180,255,0.35),
+        0 10px 30px rgba(37,99,235,0.15);
 }
 
 .skill i{
@@ -292,56 +291,102 @@ header{
     color: #2563eb;
 }
 
-@keyframes floatSkill{
+@keyframes floating1 {
 
-    0%{
-        transform: translateY(0px);
+    0%,100% {
+        transform: translate(0px,0px);
     }
 
-    25%{
-        transform: translateY(-10px);
+    25% {
+        transform: translate(-8px,-6px);
     }
 
-    50%{
-        transform: translateY(-18px);
+    50% {
+        transform: translate(6px,4px);
     }
 
-    75%{
-        transform: translateY(-8px);
+    75% {
+        transform: translate(-4px,8px);
     }
-
-    100%{
-        transform: translateY(0px);
-    }
-
-}
-.skill:nth-child(1){ /* HTML */
-    top: -20px;
-    left: 40px;
 }
 
-.skill:nth-child(2){ /* CSS */
-    top: 70px;
+@keyframes floating2 {
+
+    0%,100% {
+        transform: translate(0px,0px);
+    }
+
+    25% {
+        transform: translate(10px,-8px);
+    }
+
+    50% {
+        transform: translate(-6px,6px);
+    }
+
+    75% {
+        transform: translate(8px,2px);
+    }
+}
+
+@keyframes floating3 {
+
+    0%,100% {
+        transform: translate(0px,0px);
+    }
+
+    25% {
+        transform: translate(-10px,4px);
+    }
+
+    50% {
+        transform: translate(4px,-10px);
+    }
+
+    75% {
+        transform: translate(8px,6px);
+    }
+}
+
+    /*--------------------------*/
+
+.skill:nth-child(1){
+
+    animation: floating1 6s ease-in-out infinite;
+    top: -30px;
+    left: 20px;
+}
+
+.skill:nth-child(2){
+
+    animation: floating2 7s ease-in-out infinite;
+    top: 90px;
     left: 180px;
 }
 
-.skill:nth-child(3){ /* JavaScript */
-    top: -10px;
-    left: 380px;
+.skill:nth-child(3){
+
+    animation: floating3 5s ease-in-out infinite;
+    top: -20px;
+    left: 430px;
 }
 
-.skill:nth-child(4){ /* Java */
-    top: 90px;
-    left: 540px;
+.skill:nth-child(4){
+
+    animation: floating2 8s ease-in-out infinite;
+    top: 110px;
+    left: 620px;
 }
 
-.skill:nth-child(5){ /* C++ */
-    top: 10px;
-    left: 720px;
-}
+.skill:nth-child(5){
 
+    animation: floating1 6.5s ease-in-out infinite;
+    top: 0px;
+    left: 820px;
+}
 
         /*COLORES DE LOGOS LENGUAJES*/
+
 .skill .fa-html5{
     color: #E34F26;
 }
