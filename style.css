@@ -534,3 +534,49 @@ footer{
         font-size:1.1rem;
     }
 }
+
+     /*MODO MOBIL*/
+
+@media (max-width: 768px){
+
+    .skills{
+
+        width: 100%;
+
+        height: auto;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        margin-top: 30px;
+    }
+
+    .skill{
+
+        position: static;
+
+        margin: 0;
+
+        width: 90px;
+
+        height: 90px;
+    }
+
+    .skill i{
+
+        font-size: 2rem;
+    }
+
+    .skill span{
+
+        font-size: 0.8rem;
+    }
+
+}
