@@ -140,62 +140,52 @@ header{
 /* HERO BUTTONS */
 
 .hero-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin-top:35px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 35px;
 }
 
 .hero-btn{
 
-    min-width: 140px;
+    min-width: 110px;
+    height: 42px;
 
-    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding: 0 20px;
+    text-decoration: none;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-size: 0.9rem;
+    font-weight: 600;
 
-    text-decoration:none;
+    border-radius: 10px;
 
-    border-radius:10px;
-
-    font-size:0.95rem;
-
-    font-weight:600;
-
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.hero-btn:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:0 10px 25px rgba(37,99,235,.25);
-}
+/* ESTILO UNIFICADO */
 
 .secondary-btn{
 
-    background:transparent;
+    background: transparent;
 
-    color:#2563eb;
+    color: #2563eb !important;
 
-    border:2px solid #2563eb;
+    border: 2px solid #2563eb;
 }
 
 .secondary-btn:hover{
 
-    background:#2563eb;
+    background: #2563eb;
 
-    color:white;
+    color: white !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.2);
 }
 
 /* ABOUT */
@@ -230,7 +220,151 @@ header{
     color:#64748b;
 }
 
-/* PROJECTS */
+.skills{
+
+    position: relative;
+    width: 900px;
+    height: 180px;
+    margin: 20px auto 0;
+    margin-top: 10px;
+}
+
+.skill{
+
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    /* Glassmorphism */
+
+    background: rgba(255, 255, 255, 0.35);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.12),
+        inset 0 1px 1px rgba(255,255,255,0.3);
+
+    transition: all 0.3s ease;
+
+    animation: floatSkill 4s ease-in-out infinite;
+
+    position: absolute;
+}
+
+.skill:hover{
+
+    transform: translateY(-10px) scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,0.15),
+        inset 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.skill i{
+
+    font-size: 2.3rem;
+
+    margin-bottom: 8px;
+}
+
+.skill span{
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+.cpp{
+
+    font-size: 2rem !important;
+
+    color: #2563eb;
+}
+
+@keyframes floatSkill{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-10px);
+    }
+
+    50%{
+        transform: translateY(-18px);
+    }
+
+    75%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+.skill:nth-child(1){ /* HTML */
+    top: -20px;
+    left: 40px;
+}
+
+.skill:nth-child(2){ /* CSS */
+    top: 70px;
+    left: 180px;
+}
+
+.skill:nth-child(3){ /* JavaScript */
+    top: -10px;
+    left: 380px;
+}
+
+.skill:nth-child(4){ /* Java */
+    top: 90px;
+    left: 540px;
+}
+
+.skill:nth-child(5){ /* C++ */
+    top: 10px;
+    left: 720px;
+}
+
+
+        /*COLORES DE LOGOS LENGUAJES*/
+.skill .fa-html5{
+    color: #E34F26;
+}
+
+.skill .fa-css3-alt{
+    color: #1572B6;
+}
+
+.skill .fa-js{
+    color: #F7DF1E;
+}
+
+.skill .fa-java{
+    color: #000000;
+}
+
+.cpp{
+    color: #00599C;
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+        /* PROJECTS */
 
 .projects{
 
@@ -298,41 +432,51 @@ header{
 
 .contact-buttons{
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    gap:20px;
+    gap: 15px;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
 }
 
 .contact-btn{
 
-    width:180px;
+    min-width: 140px;
+    height: 45px;
 
-    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    display:flex;
+    text-decoration: none;
 
-    justify-content:center;
+    background: transparent;
 
-    align-items:center;
+    color: #2563eb;
 
-    text-decoration:none;
+    border: 2px solid #2563eb;
 
-    color:white;
+    border-radius: 10px;
 
-    background:#2563eb;
+    font-size: 0.95rem;
+    font-weight: 600;
 
-    border-radius:12px;
-
-    transition:.3s;
+    transition: all 0.3s ease;
 }
 
 .contact-btn:hover{
 
-    transform:translateY(-4px);
+    background: #2563eb;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.2);
 }
 
 /* FOOTER */
