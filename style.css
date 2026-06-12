@@ -231,8 +231,8 @@ header{
 
 .skill{
 
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 
     border-radius: 50%;
 
@@ -477,15 +477,12 @@ header{
 
 .contact-buttons{
 
-    display: flex;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 
-    justify-content: center;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-
-    margin-top: 30px;
+    margin-top:50px;
 }
 
 .contact-btn{
@@ -511,6 +508,56 @@ header{
     font-weight: 600;
 
     transition: all 0.3s ease;
+}
+
+.contact-bubble{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    background:rgba(190,220,255,0.20);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(0,200,255,0.25);
+
+    box-shadow:
+        0 8px 25px rgba(0,150,255,0.10);
+
+    transition:all .3s ease;
+}
+
+.contact-bubble:hover{
+
+    transform:translateY(-10px) scale(1.05);
+
+    box-shadow:
+        0 0 25px rgba(0,180,255,0.25),
+        0 10px 30px rgba(37,99,235,0.15);
+}
+
+.contact-bubble i{
+
+    font-size:2.2rem;
+
+    margin-bottom:10px;
+}
+
+.contact-bubble span{
+
+    font-size:.9rem;
+    font-weight:600;
 }
 
 .contact-btn:hover{
